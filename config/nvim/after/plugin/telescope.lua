@@ -30,25 +30,28 @@ local themes = require('telescope.themes')
 
 set = vim.keymap.set
 
-set('n', '<C-f>', builtin.live_grep)
-set('n', '<A-f>', builtin.grep_string)
-set('n', '<leader>fw', function() builtin.grep_string {search = vim.fn.input("Grep For > ")} end)
+set('n', '<leader>fs', builtin.live_grep)
+set('n', '<leader>fS', function()
+  builtin.grep_string {search = vim.fn.input("Grep For > ")}
+end)
+set('n', '<leader>fw', builtin.grep_string)
 set('n', '<leader>ff', function()
   builtin.find_files(themes.get_ivy())
 end)
-set('n', '<leader>fb', builtin.buffers)
+set({'n', 'i'}, '<C-b>', builtin.buffers)
 set('n', '<leader>fh', builtin.help_tags)
 set('n', '<leader>fk', builtin.keymaps)
-set('n', '<C-_>', function()
+set('n', '<C-f>', function()
   builtin.current_buffer_fuzzy_find({
     layout_config={
       prompt_position = 'top',
       height = 0.8,
-      width = 0.5,
+      width = 0.6,
     },
     sorting_strategy = 'ascending',
   })
 end)
 set('n', '<C-p>', builtin.git_files)
 set('n', '<leader>.', function() builtin.find_files {cwd = '~/dotfiles'} end)
+set('n', '<leader>gb', builtin.git_branches)
 

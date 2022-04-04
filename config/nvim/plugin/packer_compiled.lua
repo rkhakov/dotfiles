@@ -130,11 +130,6 @@ _G.packer_plugins = {
     path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -154,6 +149,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,

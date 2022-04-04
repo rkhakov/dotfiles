@@ -59,11 +59,10 @@ return require('packer').startup(function()
     end
   }
 
-  -- Show indent symbols
-  use "lukas-reineke/indent-blankline.nvim"
-
   -- Git
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use 'lewis6991/gitsigns.nvim'
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+  use "EdenEast/nightfox.nvim"
 end)

@@ -5,7 +5,7 @@ end
 
 telescope.setup{
   defaults = {
-    winblend = 20,
+    winblend = 0,
     mappings = {
       i = {
       }

@@ -42,8 +42,8 @@ local list = {
 
 require'nvim-tree'.setup {
   auto_reload_on_write = true,
-  disable_netrw = false,
-  hide_root_folder = false,
+  disable_netrw = true,
+  hide_root_folder = true,
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -90,7 +90,7 @@ require'nvim-tree'.setup {
     },
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     custom = {
       "__pycache__",
     },
@@ -132,4 +132,29 @@ require'nvim-tree'.setup {
       git = false,
     },
   },
+}
+
+local g = vim.g
+g.nvim_tree_icons = {
+  default = "",
+  symlink = "",
+  git = {
+    unstaged = "!",
+    staged = "✓",
+    unmerged = "",
+    renamed = "➜",
+    untracked = "★",
+    deleted = "",
+    ignored = "◌"
+  },
+  folder = {
+    arrow_open = "",
+    arrow_closed = ">",
+    default = "",
+    open = "",
+    empty = "",
+    empty_open = "",
+    symlink = "",
+    symlink_open = "",
+  }
 }

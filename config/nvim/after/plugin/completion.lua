@@ -47,18 +47,9 @@ cmp.setup({
   },
 })
 
--- `/` cmdline setup.
-cmp.setup.cmdline('/', {
-  sources = {
-    { name = 'buffer', keyword_length = 5  }
-  }
-})
-
 -- `:` cmdline setup.
 cmp.setup.cmdline(':', {
   sources = cmp.config.sources({
     { name = 'path' }
-  }, {
-    { name = 'cmdline', keyword_length = 5 }
   })
 })

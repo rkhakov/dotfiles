@@ -14,6 +14,7 @@ local on_attach = function()
   map('n', '<leader>rn', vim.lsp.buf.rename, opts)
   map('n', 'gr', vim.lsp.buf.references, opts)
   map('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+  map('n', '<leader>lf', vim.lsp.buf.formatting, opts)
 end
 
 local make_client_capabilities = vim.lsp.protocol.make_client_capabilities()

@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
       'hrsh7th/nvim-cmp',
     }
   }
+  use "jose-elias-alvarez/null-ls.nvim"
 
   -- Statusline
   use { 'nvim-lualine/lualine.nvim' }

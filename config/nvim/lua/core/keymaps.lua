@@ -63,7 +63,6 @@ map('i', '<A-k>', '<Esc>O')
 -- Save file
 map('n', '<C-s>', '<CMD>write<CR>')
 map('i', '<C-s>', '<C-o><cmd>write<CR>')
-map('n', '<leader>wa', '<CMD>wall<CR>')
 
 map('i', ',shrug', [[¯\_(ツ)_/¯]])
 

@@ -1,11 +1,8 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorschemes
-  use { 'ellisonleao/gruvbox.nvim' }
-  use {'sainnhe/gruvbox-material'}
-  use {'marko-cerovac/material.nvim'}
-  use {'olimorris/onedarkpro.nvim'}
+  use "EdenEast/nightfox.nvim"
 
   -- File Explorer
   use { 'kyazdani42/nvim-tree.lua' }
@@ -60,9 +57,8 @@ return require('packer').startup(function()
   }
 
   -- Git
-  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+  use 'TimUntersberger/neogit'
   use 'lewis6991/gitsigns.nvim'
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use 'sindrets/diffview.nvim'
 
-  use "EdenEast/nightfox.nvim"
 end)

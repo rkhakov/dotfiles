@@ -1,6 +1,6 @@
-require 'rh.globals'
-require 'rh.plugins'
-require 'rh.options'
-require 'rh.keymaps'
+require 'core.globals'
+require 'plugins'
+require 'core.keymaps'
+require 'core.options'
 
 vim.cmd 'colorscheme nightfox'

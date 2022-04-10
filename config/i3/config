@@ -99,6 +99,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Escape mode "$mode_system"
 set $mode_system (l)ock, (e)xit, (s)uspend, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
@@ -142,13 +143,14 @@ smart_gaps on
 smart_borders on
 
 # AUTOSTART
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id picom -b --experimental-backend
-exec_always --no-startup-id gxkb
-exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
+exec --no-startup-id picom -b --experimental-backend
+exec --no-startup-id gxkb
+exec --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
 
 # Keymaps
+bindsym Mod1+Control+l exec --no-startup-id blurlock
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Control+p exec--no-startup-id "flameshot screen -c

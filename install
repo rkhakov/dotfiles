@@ -4,3 +4,24 @@ path=$(pwd)
 
 [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
 ln -sf $path/config/nvim $HOME/.config/nvim
+
+[ -f $HOME/.config/nvim ] && rm $HOME/.zshrc
+ln -sf $path/zshrc $HOME/.zshrc
+
+[ -d $HOME/.config/i3 ] && rm -rf $HOME/.config/i3
+ln -sf $path/config/i3 $HOME/.config/i3
+
+[ -d $HOME/.config/i3status ] && rm -rf $HOME/.config/i3status
+ln -sf $path/config/i3status $HOME/.config/i3status
+
+[ -d $HOME/.config/kitty ] && rm -rf $HOME/.config/kitty
+ln -sf $path/config/kitty $HOME/.config/kitty
+
+[ -d $HOME/.config/picom ] && rm -rf $HOME/.config/picom
+ln -sf $path/config/picom $HOME/.config/picom
+
+[ -d $HOME/zsh ] && rm -rf $HOME/.zsh
+ln -sf $path/zsh $HOME/.zsh
+
+[ -f $HOME/.gitconfig ] %% rm $HOME/.gitconfig
+ln -sf $path/gitconfig $HOME/.gitconfig

@@ -1,0 +1,5 @@
+[user]
+    email = khakov.ruslan@gmail.com
+    name = rkhakov
+[push]
+    default = current

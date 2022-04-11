@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 path=$(pwd)
 
@@ -23,5 +23,5 @@ ln -sf $path/config/picom $HOME/.config/picom
 [ -d $HOME/zsh ] && rm -rf $HOME/.zsh
 ln -sf $path/zsh $HOME/.zsh
 
-[ -f $HOME/.gitconfig ] %% rm $HOME/.gitconfig
+[ -f $HOME/.gitconfig ] && rm $HOME/.gitconfig
 ln -sf $path/gitconfig $HOME/.gitconfig

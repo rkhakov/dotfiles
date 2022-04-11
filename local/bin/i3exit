@@ -11,9 +11,6 @@ case "$1" in
     logout)
         i3-msg exit
         ;;
-    suspend)
-        systemctl suspend
-        ;;
     hibernate)
         systemctl hibernate
         ;;

@@ -35,7 +35,7 @@
     ```
 1. Install dependencies
     ```bash
-    exa kitty picom imagemagick nitrogen gxkb
+    exa kitty picom imagemagick nitrogen gxkb xorg-xbacklight
     ```
 
 ## TODO

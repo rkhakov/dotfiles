@@ -1,27 +1,27 @@
 #!/usr/bin/env bash
 
-path=$(pwd)
+dpath=$(pwd)
 
 [ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
-ln -sf $path/config/nvim $HOME/.config/nvim
+ln -sf $dpath/config/nvim $HOME/.config/nvim
 
-[ -f $HOME/.config/nvim ] && rm $HOME/.zshrc
-ln -sf $path/zshrc $HOME/.zshrc
+[ -f $HOME/.zshrc ] && rm $HOME/.zshrc
+ln -sf $dpath/zshrc $HOME/.zshrc
+
+[ -f $HOME/.p10k.zsh ] && rm $HOME/.p10k.zsh
+ln -sf $dpath/p10k.zsh $HOME/.p10k.zsh
 
 [ -d $HOME/.config/i3 ] && rm -rf $HOME/.config/i3
-ln -sf $path/config/i3 $HOME/.config/i3
+ln -sf $dpath/config/i3 $HOME/.config/i3
 
 [ -d $HOME/.config/i3status ] && rm -rf $HOME/.config/i3status
-ln -sf $path/config/i3status $HOME/.config/i3status
+ln -sf $dpath/config/i3status $HOME/.config/i3status
 
 [ -d $HOME/.config/kitty ] && rm -rf $HOME/.config/kitty
-ln -sf $path/config/kitty $HOME/.config/kitty
+ln -sf $dpath/config/kitty $HOME/.config/kitty
 
 [ -d $HOME/.config/picom ] && rm -rf $HOME/.config/picom
-ln -sf $path/config/picom $HOME/.config/picom
-
-[ -d $HOME/zsh ] && rm -rf $HOME/.zsh
-ln -sf $path/zsh $HOME/.zsh
+ln -sf $dpath/config/picom $HOME/.config/picom
 
 [ -f $HOME/.gitconfig ] && rm $HOME/.gitconfig
-ln -sf $path/gitconfig $HOME/.gitconfig
+ln -sf $dpath/gitconfig $HOME/.gitconfig

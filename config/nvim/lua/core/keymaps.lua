@@ -68,3 +68,9 @@ map('i', ',shrug', [[¯\_(ツ)_/¯]])
 
 map('n', '<leader>we', ':call rh#save_and_exec()<CR>')
 
+-- Terminal
+map('t', '<Esc><Esc>', [[<C-\><C-n>]])
+map('t', '<C-j>', [[<C-\><C-n><C-w><C-j>]])
+map('t', '<C-k>', [[<C-\><C-n><C-w><C-k>]])
+map('t', '<C-l>', [[<C-\><C-n><C-w><C-l>]])
+map('t', '<C-h>', [[<C-\><C-n><C-w><C-h>]])

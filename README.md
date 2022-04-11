@@ -33,6 +33,11 @@
     sudo cp ~/dotfiles/local/bin/blurlock /usr/local/bin/
     # i3wm does't recognize binaries from .local/bin
     ```
+1. Install ImageMagick
+    ```bash
+    sudo pacman -S imagemagick # Arch
+    sudo apt install imagemagick # Ubuntu
+    ```
 
 ## TODO
 * Automate installation

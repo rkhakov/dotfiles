@@ -11,6 +11,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
     git
+    gitignore
     fzf
     docker
     docker-compose

@@ -145,6 +145,7 @@ smart_gaps on
 smart_borders on
 
 # AUTOSTART
+exec --no-startup-id xset s 3600 3600 -dpms
 exec --no-startup-id xss-lock --transfer-sleep-lock -- blurlock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore

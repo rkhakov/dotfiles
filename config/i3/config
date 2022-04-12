@@ -28,7 +28,8 @@ bindsym $mod+Return exec kitty
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "M+ 1m light-12" -nb "#3c3b37" -nf "#7f9f7f" -sb "#dcdccc" -sf "#3c3b37"
+# bindsym $mod+d exec --no-startup-id dmenu_run -fn "M+ 1m light-12" -nb "#3c3b37" -nf "#7f9f7f" -sb "#dcdccc" -sf "#3c3b37"
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down

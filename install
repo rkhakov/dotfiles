@@ -23,5 +23,11 @@ ln -sf $dpath/config/kitty $HOME/.config/kitty
 [ -d $HOME/.config/picom ] && rm -rf $HOME/.config/picom
 ln -sf $dpath/config/picom $HOME/.config/picom
 
+[ -d $HOME/.config/dunst ] && rm -rf $HOME/.config/dunst
+ln -sf $dpath/config/dunst $HOME/.config/dunst
+
+[ -d $HOME/.config/rofi ] && rm -rf $HOME/.config/rofi
+ln -sf $dpath/config/rofi $HOME/.config/rofi
+
 [ -f $HOME/.gitconfig ] && rm $HOME/.gitconfig
 ln -sf $dpath/gitconfig $HOME/.gitconfig

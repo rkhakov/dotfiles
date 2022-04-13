@@ -13,7 +13,7 @@ local on_attach = function()
   map('n', 'gi', vim.lsp.buf.implementation, opts)
   map('n', '<leader>rn', vim.lsp.buf.rename, opts)
   map('n', 'gr', vim.lsp.buf.references, opts)
-  map('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+  map('n', '<leader>lh', vim.lsp.buf.signature_help, opts)
   map('n', '<leader>lf', vim.lsp.buf.formatting, opts)
 end
 

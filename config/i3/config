@@ -1,16 +1,16 @@
-set $mod Mod4
+set $mod Mod1
 
 font pango:JetBrainsMono Nerd Font 9
 
-client.focused #556064 #556064 #80FFF9 #FDF6E3
+client.focused #282A2C #282A2C #80FFF9 #556064
 client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-client.unfocused #2E3440 #1F222D #888888 #1F222D
+client.unfocused #282A2C #282A2C #888888 #1F222D
 client.urgent #CB4B16 #FDF6E3 #1ABC9C #268BD2
 client.placeholder #000000 #0C0C0C #FFFFFF #000000
 client.background #2B2C2B
 
 # BORDERS
-default_border pixel 2
+default_border none
 default_floating_border normal
 hide_edge_borders none
 
@@ -29,7 +29,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # bindsym $mod+d exec --no-startup-id dmenu_run -fn "M+ 1m light-12" -nb "#3c3b37" -nf "#7f9f7f" -sb "#dcdccc" -sf "#3c3b37"
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -153,7 +153,11 @@ exec --no-startup-id picom -b --experimental-backend
 exec --no-startup-id gxkb
 exec --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
 
+# Assignments
+assign [class="Slack"] $ws4
+assign [class="Brave-browser"] $ws1
+
 # Keymaps
-bindsym Mod1+Control+l exec --no-startup-id blurlock
+bindsym Control+Mod1+l exec --no-startup-id blurlock
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Control+p exec--no-startup-id "flameshot screen -c

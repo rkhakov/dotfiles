@@ -67,6 +67,8 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 alias gac="git add -A && git commit"
 alias gacm="git add -A && git commit -m"
+# Kitty
+alias icat="kitty +kitten icat"
 
 # Local config that shouldn't be in the repository
 if [ -f $HOME/.localrc ]; then source $HOME/.localrc; fi

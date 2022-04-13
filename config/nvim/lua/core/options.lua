@@ -58,7 +58,7 @@ o.autoindent = true
 o.smartindent = true
 
 -- Wrap
-o.wrap = true
+o.wrap = false
 o.breakindent = true
 o.showbreak = string.rep(" ", 3)
 o.linebreak = true
@@ -92,7 +92,7 @@ o.cmdheight = 1
 o.shortmess:append "c"
 
 -- Vertical line
-o.colorcolumn = "100"
+o.colorcolumn = "88"
 
 -- Enable cursor line
 o.cursorline = true
@@ -102,8 +102,8 @@ o.joinspaces = false
 -- Shortmess
 o.shortmess = o.shortmess
   + {
-    A = true, -- don't give the "ATTENTION" message when an existing swap file is found.
-    I = true, -- don't give the intro message when starting Vim |:intro|.
+    A = true, -- don't give the "ATTENTION" message when an existing swap file is found
+    I = true, -- don't give the intro message when starting Vim |:intro|
     W = true, -- don't give "written" or "[w]" when writing a file
     c = true, -- don't give |ins-completion-menu| messages
     m = true, -- use "[+]" instead of "[Modified]"

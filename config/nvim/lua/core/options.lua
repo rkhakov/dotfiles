@@ -94,8 +94,7 @@ o.shortmess:append "c"
 -- Vertical line
 o.colorcolumn = "88"
 
--- Enable cursor line
-o.cursorline = true
+o.cursorline = false
 
 o.joinspaces = false
 

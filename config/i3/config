@@ -151,11 +151,16 @@ exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -b --experimental-backend
 exec --no-startup-id gxkb
+exec --no-startup-id dunst
 exec --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
 
 # Assignments
 assign [class="Slack"] $ws4
-assign [class="Brave-browser"] $ws1
+assign [class="Brave-browser|firefox*"] $ws1
+assign [class="jetbrains-pycharm"] $ws3
+
+# Floating
+for_window [class="jetbrains-toolbox"] floating enable
 
 # Keymaps
 bindsym Control+Mod1+l exec --no-startup-id blurlock

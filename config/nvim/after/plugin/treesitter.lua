@@ -13,6 +13,7 @@ treesitter.setup {
     "go",
     "json",
     "html",
+    "yaml",
   },
   sync_install = true,
   ignore_install = {},

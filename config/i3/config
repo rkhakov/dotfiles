@@ -152,7 +152,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id picom -b --experimental-backend
 exec --no-startup-id gxkb
 exec --no-startup-id dunst
-exec --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
+exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ru -option grp:caps_toggle"
 
 # Assignments
 assign [class="Slack"] $ws4

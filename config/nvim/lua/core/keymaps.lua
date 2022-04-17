@@ -30,6 +30,9 @@ map('n', '<leader>7', '7gt')
 map('n', '<leader>8', '8gt')
 map('n', '<leader>9', '9gt')
 map('n', '<leader>0', '<cmd>tablast<CR>')
+-- Move tab
+map('n', '<M-Left>', '<cmd>-tabmove<CR>')
+map('n', '<M-Right>', '<cmd>+tabmove<CR>')
 
 -- Switch panels
 map('n', '<C-j>', '<C-w><C-j>')
@@ -48,6 +51,12 @@ map('n', '<A-j>', ':m .+1<CR>==')
 map('n', '<A-k>', ':m .-2<CR>==')
 map('v', '<A-j>', ":m '>+1<CR>gv=gv")
 map('v', '<A-k>', ":m '<-2<CR>gv=gv")
+map('i', 'jj', '<Esc>')
+
+-- Buffers
+map('n', '<leader>bn', '<cmd>bnext<CR>')
+map('n', '<leader>bp', '<cmd>bprevious<CR>')
+map('n', '<leader>bt', '<C-w>s<C-w>T')
 
 -- Close current buffer
 map('n', '<leader>q', ':bdelete<CR>')

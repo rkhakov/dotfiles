@@ -34,6 +34,7 @@ CASE_SENSITIVE="true"
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
+DISABLE_AUTO_TITLE="true"
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP

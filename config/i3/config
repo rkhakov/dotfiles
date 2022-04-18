@@ -10,7 +10,7 @@ client.placeholder #000000 #0C0C0C #FFFFFF #000000
 client.background #2B2C2B
 
 # BORDERS
-default_border none
+default_border pixel 2
 default_floating_border normal
 hide_edge_borders none
 

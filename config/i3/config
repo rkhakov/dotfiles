@@ -2,12 +2,21 @@ set $mod Mod4
 
 font pango:JetBrainsMono Nerd Font 9
 
-client.focused #282A2C #282A2C #80FFF9 #556064
-client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-client.unfocused #282A2C #282A2C #888888 #1F222D
-client.urgent #CB4B16 #FDF6E3 #1ABC9C #268BD2
-client.placeholder #000000 #0C0C0C #FFFFFF #000000
-client.background #2B2C2B
+# client.focused          #556064 #556064 #80FFF9 #FDF6E3
+# client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+# client.unfocused        #2e3440 #1f222d #888888 #1f222d
+# client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+# client.placeholder      #000000 #0c0c0c #ffffff #000000
+# client.background       #2B2C2B
+
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 
 # BORDERS
 default_border pixel 2

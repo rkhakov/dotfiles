@@ -31,3 +31,6 @@ ln -sf $dpath/config/rofi $HOME/.config/rofi
 
 [ -f $HOME/.gitconfig ] && rm $HOME/.gitconfig
 ln -sf $dpath/gitconfig $HOME/.gitconfig
+
+[ -f $HOME/.config/lazygit ] && rm $HOME/.config/lazygit
+ln -sf $dpath/config/lazygit $HOME/.config/lazygit

@@ -148,8 +148,8 @@ bar {
 }
 
 # GAPS
-gaps inner 14
-gaps outer -2
+gaps inner 15
+gaps outer -14
 smart_gaps on
 smart_borders on
 

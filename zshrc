@@ -67,7 +67,6 @@ alias ls="exa -b --git --icons --group-directories-first"
 alias ll="ls -lah"
 # Git aliases
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 alias gac="git add -A && git commit"
 alias gacm="git add -A && git commit -m"
 # Kitty

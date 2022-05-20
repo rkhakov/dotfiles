@@ -11,6 +11,10 @@ o.encoding = "utf-8"
 o.foldmethod = 'indent'
 o.foldenable = false
 
+-- tabs
+o.splitright = true
+o.splitbelow = true
+
 -- Chars
 o.list = true
 -- o.listchars:append("space:·")

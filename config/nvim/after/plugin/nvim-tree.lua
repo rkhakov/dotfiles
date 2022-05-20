@@ -37,7 +37,6 @@ local list = {
 require'nvim-tree'.setup {
   auto_reload_on_write = true,
   disable_netrw = true,
-  hide_root_folder = true,
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -90,8 +89,6 @@ require'nvim-tree'.setup {
     },
     exclude = {},
   },
-  quit_on_open = 0,
-  git_hl = 1,
   git = {
     enable = true,
     ignore = true,
@@ -114,13 +111,6 @@ require'nvim-tree'.setup {
         },
       },
     },
-  },
-  show_icons = {
-    git = 1,
-    folders = 1,
-    files = 1,
-    folder_arrows = 1,
-    tree_width = 30,
   },
   trash = {
     cmd = "trash",

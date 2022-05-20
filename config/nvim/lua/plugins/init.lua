@@ -66,7 +66,7 @@ return require('packer').startup(function(use)
   -- Git
   use 'TimUntersberger/neogit'
   use 'lewis6991/gitsigns.nvim'
-  use 'sindrets/diffview.nvim'
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   if packer_bootstrap then
     require('packer').sync()

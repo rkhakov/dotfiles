@@ -54,7 +54,7 @@ setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 unsetopt correct  # disable auto correct
 
-export TERM='xterm-kitty'
+export TERM='xterm-256color'
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"

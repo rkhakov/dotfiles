@@ -128,6 +128,7 @@ vim.g.loaded_zip = 1
 
 -- Global status
 o.laststatus = 3
+o.winbar = "%=%m %f"
 
 vim.cmd[[
   augroup RemoveTrailingWhitespaces

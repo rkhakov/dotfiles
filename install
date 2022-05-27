@@ -34,3 +34,6 @@ ln -sf $dpath/gitconfig $HOME/.gitconfig
 
 [ -f $HOME/.config/lazygit ] && rm $HOME/.config/lazygit
 ln -sf $dpath/config/lazygit $HOME/.config/lazygit
+
+[ -f $HOME/.config/mimeapps.list ] && rm $HOME/.config/mimeapps.list
+ln -sf $dpath/config/mimeapps.list $HOME/.config/mimeapps.list

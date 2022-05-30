@@ -128,7 +128,9 @@ vim.g.loaded_zip = 1
 
 -- Global status
 o.laststatus = 3
-o.winbar = "%=%m %f"
+if vim.fn.has('nvim-0.8') == 1 then
+  o.winbar = "%=%m %f"
+end
 
 vim.cmd[[
   augroup RemoveTrailingWhitespaces

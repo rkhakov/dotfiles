@@ -1,5 +1,12 @@
-theme = "modern"
+theme = "semi-native"
 icons = "awesome6"
+
+[[block]]
+block = "backlight"
+minimum = 20
+maximum = 100
+cycle = [100, 50, 30]
+if_command = "test -e /sys/class/backlight/intel_backlight"
 
 [[block]]
 block = "pomodoro"
@@ -29,10 +36,10 @@ format_swap = "{swap_used_percents}"
 block = "cpu"
 interval = 1
 
-[[block]]
-block = "load"
-interval = 1
-format = "{1m}"
+# [[block]]
+# block = "load"
+# interval = 1
+# format = "{1m}"
 
 [[block]]
 block = "sound"
@@ -45,4 +52,5 @@ format = "%a %d/%m %R"
 [[block]]
 block = "battery"
 if_command = "test -e /sys/class/power_supply/BAT0"
+format = " {percentage}"
 

@@ -2,25 +2,22 @@ set $mod Mod4
 
 font pango:JetBrainsMono Nerd Font 9
 
-# client.focused          #556064 #556064 #80FFF9 #FDF6E3
-# client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-# client.unfocused        #2e3440 #1f222d #888888 #1f222d
-# client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-# client.placeholder      #000000 #0c0c0c #ffffff #000000
-# client.background       #2B2C2B
+client.focused          #a9b665 #a9b665 #32302f #a9b665   #a9b665
+client.unfocused        #32302f #32302f #dfbf8e #32302f   #32302f
+client.focused_inactive #32302f #32302f #dfbf8e #32302f   #32302f
 
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+# client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #900000 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
 focus_follows_mouse no
 
 # BORDERS
-default_border pixel 2
+default_border pixel 1
 default_floating_border normal
 hide_edge_borders none
 
@@ -144,13 +141,27 @@ mode "resize" {
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# bar {
+#     status_command i3status
+# }
 bar {
-    status_command i3status
+    font pango:DejaVu Sans Mono, FontAwesome 9
+    position bottom
+    status_command /usr/bin/i3status-rs ~/.config/i3status-rust/config.toml
+    colors {
+        separator #666666
+        background #222222
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
 }
 
 # GAPS
-gaps inner 15
-gaps outer -14
+gaps inner 5
+gaps outer -4
 smart_gaps on
 smart_borders on
 

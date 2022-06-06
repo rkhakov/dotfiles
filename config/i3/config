@@ -145,7 +145,7 @@ mode "resize" {
 #     status_command i3status
 # }
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 9
+    font pango:JetBrainsMono Nerd Font, FontAwesome 9
     position bottom
     status_command /usr/bin/i3status-rs ~/.config/i3status-rust/config.toml
     colors {

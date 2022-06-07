@@ -71,7 +71,6 @@ alias gac="git add -A && git commit"
 alias gacm="git add -A && git commit -m"
 # Kitty
 alias icat="kitty +kitten icat"
-alias ssh="kitty +kitten ssh"
 
 # functions
 # ex - archive extractor

@@ -79,6 +79,8 @@ return require('packer').startup(function(use)
   -- UndoTree
   use 'mbbill/undotree'
 
+  use 'ThePrimeagen/harpoon'
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end

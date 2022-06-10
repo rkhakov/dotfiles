@@ -76,6 +76,9 @@ return require('packer').startup(function(use)
   use 'towolf/vim-helm'
   use 'cuducos/yaml.nvim'
 
+  -- UndoTree
+  use 'mbbill/undotree'
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end

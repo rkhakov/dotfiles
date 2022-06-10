@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
     }
   }
   use "jose-elias-alvarez/null-ls.nvim"
+  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 
   -- Statusline
   use { 'nvim-lualine/lualine.nvim' }

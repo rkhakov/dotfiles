@@ -28,7 +28,7 @@ telescope.load_extension('fzf')
 local builtin = require('telescope.builtin')
 local themes = require('telescope.themes')
 
-set = vim.keymap.set
+local set = vim.keymap.set
 
 set('n', '<leader>fs', builtin.live_grep)
 set('n', '<leader>fS', function()

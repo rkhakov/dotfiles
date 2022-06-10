@@ -200,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["yaml.nvim"] = {
+    loaded = true,
+    path = "/home/ruslan/.local/share/nvim/site/pack/packer/start/yaml.nvim",
+    url = "https://github.com/cuducos/yaml.nvim"
   }
 }
 

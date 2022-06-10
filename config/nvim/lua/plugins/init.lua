@@ -72,6 +72,9 @@ return require('packer').startup(function(use)
     require("toggleterm").setup()
   end}
 
+  use 'towolf/vim-helm'
+  use 'cuducos/yaml.nvim'
+
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end

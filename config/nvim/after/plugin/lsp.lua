@@ -1,6 +1,6 @@
-local on_attach = function()
+local on_attach = function(_, bufnr)
   local map = vim.keymap.set
-  local opts = {buffer = 0, noremap=true, silent=true}
+  local opts = {buffer = bufnr, noremap=true, silent=true}
 
   map('n', '<F8>', vim.diagnostic.open_float, opts)
   map('n', '<F6>', vim.diagnostic.goto_prev, opts)

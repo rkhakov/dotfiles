@@ -13,7 +13,7 @@ map({'n', 'v'}, '<leader>d', '"+d')
 -- Select all
 map('n', 'vaa', 'ggVG')
 
-map('n', '<leader><CR>', '<cmd>set hlsearch!<CR>')
+map('n', '<leader><leader>', '<cmd>set hlsearch!<CR>')
 
 -- Keep visual mode after indent
 map('v', '>', '>gv')
@@ -53,9 +53,7 @@ map('v', '<A-j>', ":m '>+1<CR>gv=gv")
 map('v', '<A-k>', ":m '<-2<CR>gv=gv")
 map('i', 'jj', '<Esc>')
 
--- Buffers
-map('n', '<leader>bn', '<cmd>bnext<CR>')
-map('n', '<leader>bp', '<cmd>bprevious<CR>')
+-- buffer to tab
 map('n', '<leader>bt', '<C-w>s<C-w>T')
 
 -- Close current buffer
@@ -75,7 +73,7 @@ map('i', '<C-s>', '<C-o><cmd>write<CR>')
 
 map('i', ',shrug', [[¯\_(ツ)_/¯]])
 
-map('n', '<leader>we', ':call rh#save_and_exec()<CR>')
+map('n', '<leader><CR>', ':call rh#save_and_exec()<CR>')
 
 -- Terminal
 map('t', '<Esc><Esc>', [[<C-\><C-n>]])

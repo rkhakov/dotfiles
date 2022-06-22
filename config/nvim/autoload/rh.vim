@@ -6,6 +6,9 @@ if !exists('*rh#save_and_exec')
     elseif &filetype == 'lua'
       :silent! write
       :luafile %
+    elseif &filetype == 'python'
+      :silent! write
+      :!python %
     endif
 
     return

@@ -138,7 +138,3 @@ vim.cmd[[
     autocmd BufWritePre * %s/\s\+$//e
   augroup END
 ]]
-
-vim.cmd[[
-  autocmd BufNewFile,BufRead *.conf setlocal filetype=dosini
-]]

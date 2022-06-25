@@ -1,17 +1,17 @@
 <div align="center">
 
-<span style="font-size: 2em; font-weight: bold;">Dotfiles :house:</span>
+# Dotfiles :house:</span>
 
 <span style="font-size: 0.9em;">__Always WIP__ &nbsp; :sparkles:</span>
 
 </div>
 
-## Overview
+## 📌 &nbsp; Overview
 This repository contains all my dotfiles managed by [chezmoi](https://github.com/twpayne/chezmoi/)
 
 
-## :rocket: &nbsp; Install
+## 🚀 &nbsp; Install
 
-## :package: &nbsp; Dependencies
+## 📦 &nbsp; Dependencies
 
-## :scroll: &nbsp; Cheatsheet
+## 📜 &nbsp; Cheatsheet

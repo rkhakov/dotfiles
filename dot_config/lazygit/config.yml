@@ -1,0 +1,7 @@
+keybinding:
+  universal:
+    appendNewline: '<tab>'
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy

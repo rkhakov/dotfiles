@@ -1,0 +1,8 @@
+README.md
+arch/
+
+*.txt
+*/*.txt
+
+backups/
+backups/**

@@ -73,7 +73,22 @@ map('i', '<C-s>', '<C-o><cmd>write<CR>')
 
 map('i', ',shrug', [[¯\_(ツ)_/¯]])
 
-map('n', '<leader><CR>', ':call rh#save_and_exec()<CR>')
+local function save_and_exec()
+  local ft = vim.bo.filetype
+
+  if ft == 'lua' then
+    vim.cmd("silent! write")
+    vim.cmd("luafile %")
+  elseif ft == 'vim' then
+    vim.cmd("silent! write")
+    vim.cmd("source %")
+  elseif ft == 'python' then
+    vim.cmd("silent! write")
+    vim.cmd("!python %")
+  end
+
+end
+map('n', '<leader><CR>', save_and_exec)
 
 -- Terminal
 map('t', '<Esc><Esc>', [[<C-\><C-n>]])

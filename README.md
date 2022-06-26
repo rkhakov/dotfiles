@@ -18,7 +18,7 @@ This repository contains all my dotfiles managed by [chezmoi](https://github.com
     ```
 1. Clone dotfiles
     ```shell
-    chezmoi init https://github.com/rkhakov/dotfiles.git
+    chezmoi init git@github.com:rkhakov/dotfiles.git
     ```
 1. Apply
     ```shell

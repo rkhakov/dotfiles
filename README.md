@@ -12,6 +12,24 @@ This repository contains all my dotfiles managed by [chezmoi](https://github.com
 
 ## 🚀 &nbsp; Install
 
+1. Install chezmoi
+    ```shell
+    sh -c "$(curl -fsLS chezmoi.io/get)" -- -b $HOME/.local/bin
+    ```
+1. Close dotfiles
+    ```shell
+    chezmoi init https://github.com/rkhakov/dotfiles.git
+    ```
+1. Apply
+    ```shell
+    chezmoi apply
+    ```
+
+Also you can do this with one line
+```shell
+chezmoi init --apply https://github.com/rkhakov/dotfiles.git
+```
+
 ## 📦 &nbsp; Dependencies
 
 ## 📜 &nbsp; Cheatsheet

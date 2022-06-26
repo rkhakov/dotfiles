@@ -132,6 +132,9 @@ if vim.fn.has('nvim-0.8') == 1 then
   o.winbar = "%=%m %f"
 end
 
+-- Diff
+vim.opt.diffopt = { "internal", "filler", "closeoff", "hiddenoff", "algorithm:minimal" }
+
 vim.cmd[[
   augroup RemoveTrailingWhitespaces
     autocmd!

@@ -16,7 +16,7 @@ This repository contains all my dotfiles managed by [chezmoi](https://github.com
     ```shell
     sh -c "$(curl -fsLS chezmoi.io/get)" -- -b $HOME/.local/bin
     ```
-1. Close dotfiles
+1. Clone dotfiles
     ```shell
     chezmoi init https://github.com/rkhakov/dotfiles.git
     ```

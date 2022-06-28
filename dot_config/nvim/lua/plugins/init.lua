@@ -88,6 +88,7 @@ return require('packer').startup(function(use)
 
   use 'alker0/chezmoi.vim'
 
+  use 'j-hui/fidget.nvim'
 
   if PACKER_BOOTSTRAP then
     require('packer').sync()
